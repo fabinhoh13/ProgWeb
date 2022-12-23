@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: white;
+}
+
+img {
+    border: 1px solid white;
+    height: 25vw;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+picture {
+    flex: 1;
+}
