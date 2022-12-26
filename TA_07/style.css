@@ -1,85 +1,80 @@
 body {
-    margin: 0;
-  }
-  
+  margin: 0;
+}
 
-  nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-    background-color: whitesmoke;
-    font-family: Helvetica, sans-serif;
-    height: 200px;
-  }
 
-  #flex-container {
-    display: flex;
-    justify-content: space-between;
-    height: 200px;
-  }
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   
-  nav {
-    background-color: royalblue;
-    height: 75px;
-  }
+  background-color: whitesmoke;
+  font-family: Helvetica, sans-serif;
+  background-color: royalblue;
+  height: 34px;
+}
 
-  a {
-    font-weight: bold;
-    font-size: 24px;
-    background-color: tomato;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 50px;
-  }
-  
-  header {
-    background-color: lightskyblue;
-    height: 400px;
-  }
-  
-  section {
-    background-color: gray;
-    margin: 75px 100px;
-  }
-  
-  footer {
-    background-color: black;
-    height: 100px;
-    color: white;
-    text-align: center;
-  }
-  
-  p {
-    background-color: khaki;
-    height: 200px;
-    margin-bottom: 75px;
-  }
-  
-  div.col {
-    background-color: tomato;
-    border: 2px solid black;
-    width: calc(50% - 10px);
-    margin: 6px;
-  }
-  
-  div.lin {
-    background-color: green;
-    color: black;
-    text-align: center;
-    font-family: Verdana;
-    border: 1px solid black;
-    width: 75%;
-    flex-direction: row;
-    flex-grow: 1;
-    align-items: center;
-  }
+#flex-container {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+}
 
-  div.lines {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1px;
-  }
-  
-  
+a {
+  font-weight: bold;
+  font-size: 12px;
+  background-color: tomato;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 50px;
+}
+
+header {
+  background-color: lightskyblue;
+  height: 180px;
+}
+
+section {
+  background-color: gray;
+  margin: 75px 100px;
+}
+
+footer {
+  background-color: black;
+  height: 5%;
+  color: white;
+  text-align: center;
+}
+
+p {
+  background-color: khaki;
+  height: 200px;
+  margin-bottom: 75px;
+}
+
+div.col {
+  background-color: tomato;
+  border: 2px solid black;
+  width: calc(50% - 10px);
+  margin: 20px;
+}
+
+div.lin {
+  background-color: green;
+  color: black;
+  text-align: center;
+  font-family: Verdana;
+  border: 1px solid black;
+  width: 75%;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+}
+
+div.lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1px;
+}
+
