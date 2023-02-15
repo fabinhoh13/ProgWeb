@@ -1,6 +1,7 @@
 class Word {
-    constructor (element, word, description) {
+    constructor (element, word, description, id) {
         const newDiv = document.createElement ('div');
+        newDiv.id = 'div' + id;
         const newh1 = document.createElement('h1');
         newh1.textContent = word;
         newDiv.append(newh1);
