@@ -17,8 +17,8 @@ class App {
         const inputTextView = document.querySelector('#word');
         const query = encodeURIComponent(inputTextView.value);
 
-        this.words = [];
-        this.descriptions = [];
+        //this.words = [];
+        //this.descriptions = [];
 
         fetch (API_URL + query)
               .then (this._onResponse)
@@ -30,7 +30,7 @@ class App {
         const wordsContainer = document.querySelector ('#Meanings');
         wordsContainer.innerHTML = '';
         for (var i = 0; i < this.words.length; i++){
-            const newWord = new Word (wordsContainer, this.words[i], this.descriptions[i]);
+            const newWord = new Word (wordsContainer, this.words[i], this.descriptions[i], i);
         }
     }
 
@@ -38,16 +38,17 @@ class App {
         if (json === undefined){
             return;
         }
-        console.log (json);
         const word = json[0].word;
         const meaning = json[0].meanings[0].definitions[0].definition;
-        console.log(word + '\n' + meaning);
         this.words.push(word);
         this.descriptions.push(meaning);
         this._renderWords();
     }
 
     _onResponse (response) {
+        if (!response.ok){
+            return;
+        }
         return response.json();
     }
 }
